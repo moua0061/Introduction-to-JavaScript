@@ -121,10 +121,18 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 
 function hungryDog(/*add your code here*/age,weight){
   /*add your code here*/
-  if (age => 1){
-
-  }
-}
+  if (age => 1 && weight =< 5{
+    console.log("Adult Dog Food 1 year and older up to 5 lbs:");
+    return weight * 0.05;
+  }else if(age => 1 && weight =< 10){
+    console.log("Adult Dog Food 1 year and older 6-10 lbs:");
+    return weight * 0.04;
+  }else if(age => 1 && weight =< 15){
+    console.log("Adult Dog Food 1 year and older 7-15 lbs:");
+    return weight * 0.03;
+} else if (age => 1 && weight > 15){
+  console.log("Adult Dog Food 1 year and older 15+ lbs:");
+  return weight * 0.05;
 
 
 
