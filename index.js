@@ -19,6 +19,12 @@ Do the following:
 
    HINT: no function required
 */
+var votingAge = 18;
+if (votingAge>=18){
+  console.log("18 or older to vote");
+} else{
+  console.log("Not old enough to vote");
+}
 
 
 
@@ -33,7 +39,9 @@ Do the following:
    HINT: no function required
 */
 
-
+var a = 20;
+var b = 84;
+a=b;
 
 
 
@@ -48,6 +56,7 @@ Do the following:
    HINT: look up the Number method
 */
 
+var lookString = "1999";
 
 
 
@@ -60,7 +69,7 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply(a*b){
   /*add your code here*/
 }
 
