@@ -20,11 +20,9 @@ Do the following:
    HINT: no function required
 */
 var votingAge = 18;
-if (votingAge>=18){
-  console.log("18 or older to vote");
-} else{
-  console.log("Not old enough to vote");
-}
+if (votingAge=>18){
+  console.log("true");
+} else console.log("false");
 
 
 
@@ -38,10 +36,10 @@ Do the following:
 
    HINT: no function required
 */
-
-var a = 20;
-var b = 84;
+var a=1;
+var b=2;
 a=b;
+console.log(a);
 
 
 
@@ -55,10 +53,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-var lookString = "1999";
-
-
+var c=parseInt("1999"); 
+console.log(c);
 
 /*
 Task 1d - Multiply
@@ -69,9 +65,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(a*b){
+function multiply(d,e){
   /*add your code here*/
+  return d*e;
 }
+
 
 
 
