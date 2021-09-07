@@ -53,7 +53,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-let c=parseInt("1999"); 
+let h="1999";
+let c=parseInt(h); 
 console.log(c);
 
 /*
@@ -65,9 +66,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(d,e){
+function multiply(a,b){
   /*add your code here*/
-  return d*e;
+  return a*b;
 }
 console.log(multiply(9,33));
 
@@ -160,8 +161,18 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(){
+let computerChoice = Math.random();
+// console.log("computere hoice " + computerChoice);
+let userChoice = ("Rock", "Scissors", "Paper");
+
+
+function game(choiceOne, choiceTwo){
   /*add your code here*/
+  if (//scissors beats paper){
+    return "you win!";
+  } else if (){
+    return "you lose!";
+  } else return "it's a tie";
 }
 
 
