@@ -19,8 +19,8 @@ Do the following:
 
    HINT: no function required
 */
-var votingAge = 18;
-if (votingAge=>18){
+const votingAge = 18;
+if (votingAge >= 18){
   console.log("true");
 } else console.log("false");
 
@@ -36,8 +36,8 @@ Do the following:
 
    HINT: no function required
 */
-var a=1;
-var b=2;
+let a=1;
+let b=2;
 a=b;
 console.log(a);
 
@@ -53,7 +53,7 @@ Do the following:
 
    HINT: look up the Number method
 */
-var c=parseInt("1999"); 
+let c=parseInt("1999"); 
 console.log(c);
 
 /*
@@ -119,21 +119,24 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/age,weight){
+function hungryDog(weight,age){
   /*add your code here*/
-  if (age => 1 && weight =< 5{
-    console.log("Adult Dog Food 1 year and older up to 5 lbs:");
+  if (age >= 1 && weight <= 5){
     return weight * 0.05;
-  }else if(age => 1 && weight =< 10){
-    console.log("Adult Dog Food 1 year and older 6-10 lbs:");
+  } else if(age >= 1 && weight <= 10){
     return weight * 0.04;
-  }else if(age => 1 && weight =< 15){
-    console.log("Adult Dog Food 1 year and older 7-15 lbs:");
+  }else if(age >= 1 && weight <= 15){
     return weight * 0.03;
-} else if (age => 1 && weight > 15){
-  console.log("Adult Dog Food 1 year and older 15+ lbs:");
+} else if (age >= 1 && weight > 15){
+  return weight * 0.02;
+} else if (age >= 1 && weight > 15){
   return weight * 0.05;
-
+} else if (age >= 0.166 && age <= 0.33){
+  return weight * .10;
+}else if (age >= 0.416 && age <= 0.33){
+  return weight * .10;
+}
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -157,7 +160,7 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
+function game(){
   /*add your code here*/
 }
 
