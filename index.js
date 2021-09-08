@@ -162,19 +162,31 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 let computerChoice = Math.random();
-// console.log("computere hoice " + computerChoice);
-let userChoice = ("Rock", "Scissors", "Paper");
-
+if (computerChoice <= (1/3)){
+  computerChoice = 'scissors';
+} else if (computerChoice <= (2/3)){
+  computerChoice = 'paper';
+} else if (computerChoice <= 3/3){
+  computerChoice = 'rock';
+}
 
 function game(choiceOne, choiceTwo){
   /*add your code here*/
-  if (//scissors beats paper){
+  if (choiceOne == 'scissors' && choiceTwo == 'paper'){
     return "you win!";
-  } else if (){
-    return "you lose!";
+  } else if (choiceOne == 'rock' && choiceTwo == 'scissors'){
+    return "you win!";
+  } else if (choiceOne == 'paper' && choiceTwo == 'rock'){
+    return "you win!"
+  } else if (choiceOne == 'rock' && choiceTwo == 'paper'){
+    return "you lose!"
+  } else if (choiceOne == 'paper' && choiceTwo == 'scissors'){
+    return "you lose!"
+  } else if (choiceOne == 'scissors' && choiceTwo == 'rock'){
+    return "you lose!"
   } else return "it's a tie";
 }
-
+console.log(game('rock', computerChoice));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
